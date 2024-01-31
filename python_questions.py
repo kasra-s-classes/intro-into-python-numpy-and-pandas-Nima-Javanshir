@@ -30,14 +30,15 @@ def find_missing(lst: list[str]):
 
 
 def steps_to_one(start_num: int):
-    """
-    we want to make a series of numbers, each series is created like this:
-    if the number is even, divide it by 2, if it's odd, multiply it by 3 and add 1.
-    we want to know how many steps it takes to get to 1.
-
-    for example, if we start with 3, we get the following series:
-    3, 10, 5, 16, 8, 4, 2, 1
-    """
+  i=0
+  while start_num !=1:
+    if start_num%2==0:
+      start_num=start_num//2
+      i=i+1
+    else:
+      start_num = start_num * 3 + 1
+      i=i+1
+  return i 
     pass
 
 
