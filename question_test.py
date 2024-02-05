@@ -5,7 +5,7 @@ from string import ascii_lowercase
 
 import numpy as np
 import pandas as pd
-from python_questions_answers import (
+from python_questions import (
     average_monthly,
     column_average,
     find_missing,
