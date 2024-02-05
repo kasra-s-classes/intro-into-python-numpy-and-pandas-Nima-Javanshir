@@ -5,7 +5,7 @@ from string import ascii_lowercase
 
 import numpy as np
 import pandas as pd
-from python_questions_answers import (
+from python_questions import (
     average_monthly,
     column_average,
     find_missing,
@@ -129,3 +129,8 @@ def test_average_monthly():
     df["date"] = pd.to_datetime(df["date"])
     df["month"] = df["date"].dt.month
     assert df.groupby("month")["values"].mean().equals(average_monthly(df))
+
+
+
+if __name__ == "__main__":
+    pytest.main()
